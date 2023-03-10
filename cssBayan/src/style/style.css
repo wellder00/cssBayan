@@ -1,3 +1,8 @@
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
@@ -13,13 +18,22 @@ body {
   /* font-family: 'Volkhov', serif;  */
 }
 
+.bayan > h1 {
+  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
+    5px 5px 32px #eee;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 ._wrapper {
-  margin-top: 1rem;
+  margin-top: 3rem;
   max-width: 90%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
+    5px 5px 32px #eee;
 }
 
 .bayan__card-block {
@@ -27,10 +41,10 @@ body {
   padding: 0 2rem;
   justify-content: center;
   align-items: center;
-  
 }
 
 .bayan__card-block_icon-description {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,38 +52,40 @@ body {
   border-top: 0.1rem solid grey;
   margin-top: 1rem;
   cursor: pointer;
-  width: 80vw;  
+  width: 80vw;
+}
+
+.bayan__card-block_icon-description:hover > p {
+  color: rgb(7, 0, 0);
+  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
+    5px 5px 32px #eee;
 }
 
 .bayan__card-block_icon-description:hover .icon {
-   transition: transform .45s;
-   transform: rotate(180deg);
-  }
+  transition: transform 0.45s;
+  transform: rotate(180deg);
+}
 
-.bayan__card-block_icon-description:hover ~ .bayan__card-block_img{
+.bayan__card-block_icon-description:hover ~ .bayan__card-block_img {
   box-sizing: border-box;
   width: 80vw;
   height: 40vh;
- 
+
   object-fit: contain;
-  
 }
 
 .bayan__card-block_icon-description > div > img {
   transform: rotate(90deg);
   width: 0.8rem;
   margin: 0 auto;
-  
 }
-
 
 .bayan__card-block_img {
   width: 0;
   height: 0;
   overflow: hidden;
   transition: height 0.5s ease-in-out;
-  text-align: center;  
-  
+  text-align: center;
 }
 
 .bayan__card-block_img > img {
@@ -77,4 +93,5 @@ body {
   height: 100%;
   object-fit: contain;
   background-color: #fff;
+  background: transparent;
 }
