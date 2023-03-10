@@ -53,6 +53,11 @@ body {
   margin-top: 1rem;
   cursor: pointer;
   width: 80vw;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 
 .bayan__card-block_icon-description:hover > p {
@@ -66,18 +71,20 @@ body {
   transform: rotate(180deg);
 }
 
-.bayan__card-block_icon-description:hover ~ .bayan__card-block_img {
+.bayan__card-block_icon-description:hover ~ .bayan__card-block_img,
+.bayan__card-block_img:hover {
   box-sizing: border-box;
   width: 80vw;
   height: 40vh;
-
   object-fit: contain;
 }
+
 
 .bayan__card-block_icon-description > div > img {
   transform: rotate(90deg);
   width: 0.8rem;
   margin: 0 auto;
+  
 }
 
 .bayan__card-block_img {
@@ -86,6 +93,12 @@ body {
   overflow: hidden;
   transition: height 0.5s ease-in-out;
   text-align: center;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 
 .bayan__card-block_img > img {
@@ -95,3 +108,14 @@ body {
   background-color: #fff;
   background: transparent;
 }
+
+.bayan__card-block_icon-description:active ~ .bayan__card-block_img,
+.bayan__card-block_icon-description:focus ~ .bayan__card-block_img,
+.bayan__card-block_img:active,
+.bayan__card-block_img:focus{
+  box-sizing: border-box;
+  width: 80vw;
+  height: 40vh;
+  object-fit: contain;
+}
+
