@@ -1,0 +1,80 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 160%;
+  background-color: rgb(49, 31, 56);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Volkhov', serif;  */
+}
+
+._wrapper {
+  margin-top: 1rem;
+  max-width: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bayan__card-block {
+  background-color: rgba(126, 116, 130, 0.863);
+  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.bayan__card-block_icon-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19%;
+  border-top: 0.1rem solid grey;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 80vw;  
+}
+
+.bayan__card-block_icon-description:hover .icon {
+   transition: transform .45s;
+   transform: rotate(180deg);
+  }
+
+.bayan__card-block_icon-description:hover ~ .bayan__card-block_img{
+  box-sizing: border-box;
+  width: 80vw;
+  height: 40vh;
+ 
+  object-fit: contain;
+  
+}
+
+.bayan__card-block_icon-description > div > img {
+  transform: rotate(90deg);
+  width: 0.8rem;
+  margin: 0 auto;
+  
+}
+
+
+.bayan__card-block_img {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  text-align: center;  
+  
+}
+
+.bayan__card-block_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #fff;
+}
