@@ -30,8 +30,8 @@ body {
 }
 
 h1 {
-  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+    0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
   margin-top: 2rem;
   margin-bottom: 3rem;
   animation: color-change 7s infinite ease;
@@ -40,23 +40,21 @@ h1 {
 @keyframes color-change {
   35% {
     color: rgb(216, 194, 194);
-    text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-      5px 5px 32px #eee;
+    text-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+      0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
   }
   55% {
     color: rgb(179, 172, 241);
-    text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-      5px 5px 32px #eee;
+    text-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+      0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
   }
 
   85% {
     color: rgb(26, 213, 247);
-    text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-      5px 5px 32px #eee;
+    text-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+      0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
   }
 }
-
-
 
 ._wrapper {
   margin-top: 1rem;
@@ -66,16 +64,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+  box-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+    0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
 }
 
 .wrap {
   background-color: rgba(126, 116, 130, 0.863);
   width: 80vw;
   color: #010005;
-  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+    0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
 }
 
 .wrap:hover .icon > img {
@@ -86,8 +84,8 @@ h1 {
 
 .wrap:hover {
   color: rgb(26, 213, 247);
-  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+    0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
 }
 
 .accordion-item_input {
@@ -96,13 +94,13 @@ h1 {
 
 .accordion-item_trigger {
   display: block;
-  padding: 20px;
+  padding: 1.2rem;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   transition: 0.6s;
   gap: 1.2rem;
-  border-top: 1px solid rgba(31, 25, 25, 0.212);
+  border-top: 0.07rem solid rgba(31, 25, 25, 0.212);
 }
 
 .icon > img {
@@ -128,17 +126,17 @@ h1 {
 
 .accordion-item_input:checked:not(.accordion_content:active) ~ .accordion-item_trigger {
   background-color: #40355b;
-  box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+  box-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+    0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
   color: rgb(26, 213, 247);
-  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+    0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
 }
 
 .accordion-item_input:hover ~ .accordion-item_trigger {
   background-color: #7969a1;
-  box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+  box-shadow: 0.0625rem 0.0625rem 0.125rem #555, 0.125rem 0.125rem 0.25rem #888,
+    0.1875rem 0.1875rem 0.5rem #bbb, 0.25rem 0.25rem 1rem #ddd, 0.3125rem 0.3125rem 2rem #eee;
 }
 
 .accordion-item_input:checked ~ .accordion_content {
@@ -164,12 +162,12 @@ h1 {
 
 .accordion_content:active {
   opacity: 0.7;
+  transition: 0.5s ease-in-out;
 }
 
-
 .accordion-item_trigger:active:not(.accordion-item_trigger:checked) {
-  
   opacity: 0.3;
+  transition: 0.5s ease-in-out;
 }
 
 .accordion-item_input:hover ~ .accordion-item_trigger > .icon > img {
@@ -188,6 +186,6 @@ h1 {
   object-fit: contain;
 }
 
-.accordion:active{
+.accordion:active {
   color: #bd0c0c;
 }
