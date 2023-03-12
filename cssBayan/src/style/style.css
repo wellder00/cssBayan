@@ -18,24 +18,25 @@ body {
   /* font-family: 'Volkhov', serif;  */
 }
 
-.bayan > h1 {
+h1 {
   text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
     5px 5px 32px #eee;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
-._wrapper {
-  margin-top: 3rem;
+._wrapper {  
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   max-width: 90%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+    5px 5px 32px #eee;  
 }
-
+/* 
 .bayan__card-block {
   background-color: rgba(126, 116, 130, 0.863);
   padding: 0 2rem;
@@ -117,5 +118,110 @@ body {
   width: 80vw;
   height: 40vh;
   object-fit: contain;
+  transform: rotate(360deg);
+  transition: transform 0.65s;
+} */
+
+.wrap {
+  background-color: rgba(126, 116, 130, 0.863);
+  width: 80vw;
+  color: #010005;
+  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
+    5px 5px 32px #eee;
 }
 
+.wrap:hover  .icon > img{
+ opacity: 1;
+ color: #40355b;
+ transition: 0.5s ease-in-out; 
+}
+
+
+.wrap:hover input[type=radio]:not(:checked) {
+  color: rgb(255, 252, 252);
+  text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
+  5px 5px 32px #eee;
+}
+
+.accordion-item_input {
+  opacity: 0;  
+}
+.accordion-item_trigger {
+  display: block;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.6s;
+  gap: 1.2rem;
+}
+
+
+.icon > img {
+  width: 1rem;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.accordion_content {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  display: block;
+}
+
+.accordion-item_input:checked ~ .accordion-item_trigger {
+  background-color: #40355b;
+  box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
+    5px 5px 32px #eee;
+}
+
+.accordion-item_input:hover ~ .accordion-item_trigger {
+  background-color: #7969a1;
+  box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
+    5px 5px 32px #eee;
+}
+
+.accordion-item_input:checked ~ .accordion_content {
+  box-sizing: border-box;
+  width: 80vw;
+  height: 40vh;
+  object-fit: contain;
+}
+
+.accordion-item_input:hover ~ .accordion_content {
+  box-sizing: border-box;
+  width: 80vw;
+  height: 40vh;
+  object-fit: contain;  
+}
+
+.accordion_content:hover {
+  box-sizing: border-box;
+  width: 80vw;
+  height: 40vh;
+  object-fit: contain; 
+}
+
+
+
+.accordion-item_input:hover ~ .accordion-item_trigger > .icon > img {
+  transform: rotate(270deg); 
+  transition: 0.5s ease-in-out; 
+}
+
+
+.accordion_content > img {
+  padding-top: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  
+}
