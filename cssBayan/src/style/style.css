@@ -41,20 +41,22 @@ h1 {
   35% {
     color: rgb(216, 194, 194);
     text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+      5px 5px 32px #eee;
   }
   55% {
     color: rgb(179, 172, 241);
     text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+      5px 5px 32px #eee;
   }
 
   85% {
     color: rgb(26, 213, 247);
     text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;
+      5px 5px 32px #eee;
   }
 }
+
+
 
 ._wrapper {
   margin-top: 1rem;
@@ -89,7 +91,7 @@ h1 {
 }
 
 .accordion-item_input {
-  opacity: 0;  
+  opacity: 0;
 }
 
 .accordion-item_trigger {
@@ -100,7 +102,7 @@ h1 {
   cursor: pointer;
   transition: 0.6s;
   gap: 1.2rem;
-  border-top: 1px solid rgba(31, 25, 25, 0.212);  
+  border-top: 1px solid rgba(31, 25, 25, 0.212);
 }
 
 .icon > img {
@@ -124,7 +126,7 @@ h1 {
   display: block;
 }
 
-.accordion-item_input:checked ~ .accordion-item_trigger {
+.accordion-item_input:checked:not(.accordion_content:active) ~ .accordion-item_trigger {
   background-color: #40355b;
   box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
     5px 5px 32px #eee;
@@ -161,7 +163,13 @@ h1 {
 }
 
 .accordion_content:active {
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+
+.accordion-item_trigger:active:not(.accordion-item_trigger:checked) {
+  
+  opacity: 0.3;
 }
 
 .accordion-item_input:hover ~ .accordion-item_trigger > .icon > img {
@@ -178,4 +186,8 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.accordion:active{
+  color: #bd0c0c;
 }
