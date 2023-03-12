@@ -14,8 +14,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-family: 'Poppins', sans-serif; */
-  /* font-family: 'Volkhov', serif;  */
+}
+
+@media (min-width: 51.25rem) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 120rem) {
+  body {
+    font-family: 'Volkhov', serif; 
+    font-size: 1.5rem;
+  }
 }
 
 h1 {
@@ -25,7 +36,7 @@ h1 {
   margin-bottom: 3rem;
 }
 
-._wrapper {  
+._wrapper {
   margin-top: 1rem;
   margin-bottom: 3rem;
   max-width: 90%;
@@ -34,7 +45,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   box-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-    5px 5px 32px #eee;  
+    5px 5px 32px #eee;
 }
 /* 
 .bayan__card-block {
@@ -130,21 +141,20 @@ h1 {
     5px 5px 32px #eee;
 }
 
-.wrap:hover  .icon > img{
- opacity: 1;
- color: #40355b;
- transition: 0.5s ease-in-out; 
+.wrap:hover .icon > img {
+  opacity: 1;
+  color: #40355b;
+  transition: 0.5s ease-in-out;
 }
 
-
-.wrap:hover input[type=radio]:not(:checked) {
+.wrap:hover {
   color: rgb(255, 252, 252);
   text-shadow: 1px 1px 2px #555, 2px 2px 4px #888, 3px 3px 8px #bbb, 4px 4px 16px #ddd,
-  5px 5px 32px #eee;
+    5px 5px 32px #eee;
 }
 
 .accordion-item_input {
-  opacity: 0;  
+  opacity: 0;
 }
 .accordion-item_trigger {
   display: block;
@@ -155,7 +165,6 @@ h1 {
   transition: 0.6s;
   gap: 1.2rem;
 }
-
 
 .icon > img {
   width: 1rem;
@@ -201,27 +210,24 @@ h1 {
   box-sizing: border-box;
   width: 80vw;
   height: 40vh;
-  object-fit: contain;  
+  object-fit: contain;
 }
 
 .accordion_content:hover {
   box-sizing: border-box;
   width: 80vw;
   height: 40vh;
-  object-fit: contain; 
+  object-fit: contain;
 }
-
-
 
 .accordion-item_input:hover ~ .accordion-item_trigger > .icon > img {
-  transform: rotate(270deg); 
-  transition: 0.5s ease-in-out; 
+  transform: rotate(270deg);
+  transition: 0.5s ease-in-out;
 }
-
 
 .accordion_content > img {
   padding-top: 1rem;
   width: 100%;
   height: 100%;
-  object-fit: contain;  
+  object-fit: contain;
 }
